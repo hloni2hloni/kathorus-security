@@ -14,12 +14,12 @@
 <meta property="og:site_name" content="Kathorus Security">
 <meta property="og:title" content="Kathorus Security — Guarding, Undercover Agents &amp; PSIRA Training">
 <meta property="og:description" content="Security you can see — and the kind you can't. PSIRA-registered guarding, undercover agents and Grade E to A training in Katlehong, Thokoza and the East Rand.">
-<meta property="og:image" content="https://hloni2hloni.github.io/kathorus-security/assets/hero.jpg">
+<meta property="og:image" content="https://hloni2hloni.github.io/kathorus-security/assets/hero-v2.jpg">
 <meta property="og:url" content="https://hloni2hloni.github.io/kathorus-security/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kathorus Security — Guarding, Undercover Agents &amp; PSIRA Training">
 <meta name="twitter:description" content="PSIRA-registered guarding, undercover agents and Grade E to A training across the Kathorus.">
-<meta name="twitter:image" content="https://hloni2hloni.github.io/kathorus-security/assets/hero.jpg">
+<meta name="twitter:image" content="https://hloni2hloni.github.io/kathorus-security/assets/hero-v2.jpg">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
@@ -34,7 +34,7 @@
   "alternateName": "Kathorus Security",
   "description": "PSIRA-registered contract guarding, undercover security agents, warehouse security and Grade E to A security training in Katlehong, Thokoza and the East Rand.",
   "url": "https://hloni2hloni.github.io/kathorus-security/",
-  "image": "https://hloni2hloni.github.io/kathorus-security/assets/hero.jpg",
+  "image": "https://hloni2hloni.github.io/kathorus-security/assets/hero-v2.jpg",
   "telephone": "+27634157715",
   "areaServed": ["Katlehong", "Thokoza", "Vosloorus", "Ekurhuleni", "Gauteng"],
   "address": {
@@ -162,20 +162,32 @@ section{padding-block:clamp(3rem,6.5vw,5.2rem)}
 .who-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.6rem);align-items:start}
 .who-copy p{font-size:1.03rem;color:#3B4036;max-width:36rem}
 .pull{margin:1.5rem 0 0;padding:1.1rem 0 0 1rem;border-top:1px solid var(--rule);border-left:3px solid var(--lime);font-family:var(--mono);font-size:.83rem;line-height:1.6;color:var(--olive);letter-spacing:.01em}
+.who-side{display:grid;gap:1.1rem}
+.who-photo{margin:0;position:relative;overflow:hidden;background:var(--ink)}
+.who-photo img{width:100%;aspect-ratio:5/4;object-fit:cover;filter:saturate(.85)}
+.who-photo figcaption{position:absolute;left:0;bottom:0;background:var(--lime);color:#15170F;font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;padding:.4rem .65rem}
 .panel-dark{background:var(--ink);color:#D7DACD;padding:clamp(1.3rem,2.8vw,2rem)}
 .panel-dark h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lime);margin-bottom:1.1rem;font-weight:500}
 .check{list-style:none;margin:0;padding:0;counter-reset:c}
 .check li{counter-increment:c;display:grid;grid-template-columns:2.1rem 1fr;gap:.6rem;padding:.62rem 0;border-top:1px solid rgba(255,255,255,.1);font-size:.92rem;line-height:1.45}
 .check li::before{content:counter(c,decimal-leading-zero);font-family:var(--mono);font-size:.66rem;color:var(--lime);padding-top:.2rem}
 
-.rows{border-top:1px solid var(--rule)}
-.row{display:grid;grid-template-columns:3.2rem 1fr 84px;gap:clamp(1rem,3vw,2.4rem);align-items:start;padding:clamp(1.2rem,2.6vw,1.9rem) 0;border-bottom:1px solid var(--rule);transition:background .2s}
-.row:hover{background:#FBFCF7}
-.row .idx{font-family:var(--mono);font-size:.72rem;color:var(--grey);letter-spacing:.08em;padding-top:.35rem}
-.row h3{font-size:clamp(1.15rem,2vw,1.5rem);letter-spacing:-.02em;margin-bottom:.45rem}
-.row p{font-size:.93rem;color:#4B5045;margin:0;max-width:44rem}
-.row .ricon{width:84px;height:84px;border:1px solid var(--rule);display:grid;place-items:center;background:#fff}
-.row .ricon img{width:62px;height:62px;object-fit:contain;mix-blend-mode:multiply}
+.cards{display:grid;grid-template-columns:1.08fr 1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.card{background:#fff;padding:clamp(1.3rem,2.2vw,1.85rem);display:flex;flex-direction:column;gap:.9rem;transition:background .2s}
+.card:first-child{grid-row:span 2;justify-content:flex-start}
+.card:first-child .cicon{width:112px;height:112px}
+.card:first-child .cicon svg{width:58px;height:58px}
+.card:first-child h3{font-size:clamp(1.4rem,2.3vw,1.85rem);letter-spacing:-.025em;line-height:1.05;margin-top:.3rem}
+.card:first-child p{font-size:1rem;max-width:30rem}
+.card:hover{background:#FCFDF7}
+.card .top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.card .idx{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:#8A8F80;padding-top:.2rem}
+.card .cicon{width:92px;height:92px;background:#3E5240;color:#F2EEE3;display:grid;place-items:center;transition:background .2s}
+.card:hover .cicon{background:#33452F}
+.card .cicon svg{width:48px;height:48px}
+.card h3{font-size:clamp(1.08rem,1.75vw,1.34rem);letter-spacing:-.022em;line-height:1.1}
+.card p{font-size:.93rem;color:#454A3F;margin:0}
+.card .tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#3E5240;font-weight:500;margin-top:auto;padding-top:.8rem;border-top:1px solid var(--rule)}
 .duties{margin-top:2.2rem}
 .duties .lbl{display:block;margin-bottom:.8rem}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
@@ -268,15 +280,19 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
   .nav-links a{padding:.85rem 0;border-bottom:1px solid var(--rule);border-left:0}
   .burger{display:block}
   .nav .btn{display:none}
-  .row{grid-template-columns:2.2rem 1fr;grid-template-areas:"i t" "i p" "i c"}
-  .row .idx{grid-area:i}
-  .row h3{grid-area:t}
-  .row p{grid-area:p}
-  .row .ricon{grid-area:c;width:62px;height:62px;margin-top:.6rem}
-  .row .ricon img{width:44px;height:44px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .card:first-child{grid-row:auto;grid-column:span 2}
+  .card:first-child .cicon{width:92px;height:92px}
+  .card:first-child .cicon svg{width:48px;height:48px}
   .grades{grid-template-columns:repeat(3,1fr)}
   .shead{flex-direction:column;align-items:flex-start;gap:.5rem}
   .topline .wrap{font-size:.6rem}
+}
+@media (max-width:640px){
+  .cards{grid-template-columns:1fr}
+  .card:first-child{grid-column:span 1}
+  .card .cicon{width:72px;height:72px}
+  .card .cicon svg{width:38px;height:38px}
 }
 </style>
 </head>
@@ -324,7 +340,7 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
       </div>
     </div>
     <div class="hero-media">
-      <img src="assets/hero.jpg" alt="Security officer on patrol at a warehouse gate at dusk" fetchpriority="high">
+      <img src="assets/hero-v2.jpg" alt="Security officer in a dark olive uniform, SECURITY printed across the back, at a warehouse gate at dusk" fetchpriority="high">
     </div>
   </section>
 
@@ -349,7 +365,12 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
           <p>We employ PSIRA-registered security guards, run our own undercover agent training, and support classroom training with tailored on-site work. Every deployment is measured against clear internal performance indicators, so you can see whether risk is actually coming down.</p>
           <p class="pull">Our vision — to be recognised as the global leader in protecting and reducing theft in business.</p>
         </div>
-        <div class="panel-dark reveal">
+        <div class="who-side">
+          <figure class="who-photo reveal">
+            <img src="assets/officer-front.jpg" alt="Kathorus Security officer on duty at a warehouse entrance" loading="lazy">
+            <figcaption>On site · Kathorus</figcaption>
+          </figure>
+          <div class="panel-dark reveal">
           <h3>Why put an undercover agent on site?</h3>
           <ul class="check">
             <li>To tell you things you do not already know.</li>
@@ -359,6 +380,7 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
             <li>To trace how those goods are moved out.</li>
             <li>To set traps that catch the people responsible.</li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -370,31 +392,36 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
         <span class="lbl"><span class="n">02</span>What we do</span>
         <h2>Guarding, investigations and training</h2>
       </div>
-      <div class="rows">
-        <article class="row reveal">
-          <span class="idx">01</span>
-          <div><h3>Contract security guard</h3><p>Vetted, PSIRA-registered officers placed on your site under contract, with supervision and performance checks.</p></div>
-          <span class="ricon"><img src="assets/icon-guard.png" alt="" loading="lazy"></span>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="top"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.4c0 4.2-2.9 7.9-7 9.6-4.1-1.7-7-5.4-7-9.6V6l7-3z"/><circle cx="12" cy="10" r="1.9"/><path d="M8.9 15.7c.5-1.5 1.6-2.3 3.1-2.3s2.6.8 3.1 2.3"/></svg></span><span class="idx">01</span></div>
+          <h3>Contract security guard</h3>
+          <p>Vetted, PSIRA-registered officers placed on your site under contract, with supervision and performance checks.</p>
+          <span class="tag">Contract guarding</span>
         </article>
-        <article class="row reveal">
-          <span class="idx">02</span>
-          <div><h3>Contract undercover agent</h3><p>Our specialist discipline: an agent working inside your operation to surface theft, collusion and losses you cannot see from the gate.</p></div>
-          <span class="ricon"><img src="assets/icon-undercover.png" alt="" loading="lazy"></span>
+        <article class="card reveal">
+          <div class="top"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="M15.4 15.4L20.5 20.5"/><path d="M7.9 10.8s1.2-2 2.9-2 2.9 2 2.9 2-1.2 2-2.9 2-2.9-2-2.9-2z"/><circle cx="10.8" cy="10.8" r=".9"/></svg></span><span class="idx">02</span></div>
+          <h3>Contract undercover agent</h3>
+          <p>Our specialist discipline: an agent working inside your operation to surface theft, collusion and losses you cannot see from the gate.</p>
+          <span class="tag">Specialist</span>
         </article>
-        <article class="row reveal">
-          <span class="idx">03</span>
-          <div><h3>Warehouse security checkers</h3><p>Stock-loss control at the door and in the aisles — checking, counting and reporting on what moves in and out.</p></div>
-          <span class="ricon"><img src="assets/icon-warehouse.png" alt="" loading="lazy"></span>
+        <article class="card reveal">
+          <div class="top"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 19.5V10L12 5l8.5 5v9.5"/><path d="M2.4 19.5h19.2"/><path d="M8.6 19.5v-5.3a3.4 3.4 0 016.8 0v5.3"/><path d="M12 11.6v2.2"/></svg></span><span class="idx">03</span></div>
+          <h3>Warehouse security checkers</h3>
+          <p>Stock-loss control at the door and in the aisles — checking, counting and reporting on what moves in and out.</p>
+          <span class="tag">Stock loss</span>
         </article>
-        <article class="row reveal">
-          <span class="idx">04</span>
-          <div><h3>Security training, Grade E to A</h3><p>Accredited classroom and on-site training through our own academy, including our undercover agent course.</p></div>
-          <span class="ricon"><img src="assets/icon-training.png" alt="" loading="lazy"></span>
+        <article class="card reveal">
+          <div class="top"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.8 8.6L12 4l9.2 4.6L12 13.2 2.8 8.6z"/><path d="M6.4 10.8v3.9c0 2 2.5 3.4 5.6 3.4s5.6-1.4 5.6-3.4v-3.9"/><path d="M21.2 8.6v6.2"/></svg></span><span class="idx">04</span></div>
+          <h3>Security training, Grade E to A</h3>
+          <p>Accredited classroom and on-site training through our own academy, including our undercover agent course.</p>
+          <span class="tag">Accredited academy</span>
         </article>
-        <article class="row reveal">
-          <span class="idx">05</span>
-          <div><h3>Security recruitment agency</h3><p>We recruit and screen security personnel for clients who need the right person, not just a warm body.</p></div>
-          <span class="ricon"><img src="assets/icon-recruit.png" alt="" loading="lazy"></span>
+        <article class="card reveal">
+          <div class="top"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.2" cy="8.6" r="2.5"/><path d="M3.6 19.6c0-2.5 2-4.6 4.6-4.6s4.6 2.1 4.6 4.6"/><circle cx="16.6" cy="8.6" r="2.5"/><path d="M14.8 15.2c.6-.13 1.2-.2 1.8-.2 2.6 0 4.6 2.1 4.6 4.6"/></svg></span><span class="idx">05</span></div>
+          <h3>Security recruitment agency</h3>
+          <p>We recruit and screen security personnel for clients who need the right person, not just a warm body.</p>
+          <span class="tag">Placement</span>
         </article>
       </div>
       <div class="duties reveal">
@@ -416,7 +443,7 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
       </div>
       <div class="training-grid">
         <div class="training-img reveal">
-          <img src="assets/training.jpg" alt="Security trainees in formation at the Kathorus training yard" loading="lazy">
+          <img src="assets/training-v2.jpg" alt="Security recruits in uniform at the Kathorus training yard" loading="lazy">
           <span class="stamp">PSIRA Centre 4334406</span>
         </div>
         <div class="reveal">
