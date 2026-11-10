@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kathorus Security — Guarding, Undercover Agents &amp; PSIRA Training | Katlehong</title>
-<meta name="description" content="Kathorus Security Academy &amp; Projects: PSIRA-registered contract guarding, undercover agents, warehouse security and Grade E to A security training across Katlehong, Thokoza and the East Rand.">
+<meta name="description" content="Kathorus Security Academy &amp; Projects: PSIRA-registered contract guarding, undercover agents, warehouse security, CCTV operator training and Grade E to A security training across Katlehong, Thokoza and the East Rand.">
 <link rel="canonical" href="https://hloni2hloni.github.io/kathorus-security/">
 <meta name="theme-color" content="#111310">
 <meta name="geo.region" content="ZA-GP">
@@ -32,9 +32,14 @@
   "@type": "SecurityService",
   "name": "Kathorus Security Academy & Projects",
   "alternateName": "Kathorus Security",
-  "description": "PSIRA-registered contract guarding, undercover security agents, warehouse security and Grade E to A security training in Katlehong, Thokoza and the East Rand.",
+  "description": "PSIRA-registered contract guarding, undercover security agents, warehouse security, CCTV operator training and Grade E to A security training in Katlehong, Thokoza and the East Rand.",
   "url": "https://hloni2hloni.github.io/kathorus-security/",
   "image": "https://hloni2hloni.github.io/kathorus-security/assets/hero-v2.jpg",
+  "employee": {
+    "@type": "Person",
+    "name": "Jacob Molai",
+    "jobTitle": "Main Director — Security Management & HR Specialist"
+  },
   "telephone": "+27634157715",
   "areaServed": ["Katlehong", "Thokoza", "Vosloorus", "Ekurhuleni", "Gauteng"],
   "address": {
@@ -147,6 +152,9 @@ p{margin:0 0 1rem}
 .hero-media img{width:100%;height:100%;object-fit:cover;object-position:58% 40%;filter:saturate(.72) contrast(1.05)}
 .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,19,16,.55),rgba(17,19,16,0) 45%)}
 .hero-media::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--lime);z-index:2}
+.hero-logo{position:absolute;left:clamp(1rem,2.5vw,1.7rem);bottom:clamp(1rem,2.5vw,1.7rem);width:clamp(76px,7.5vw,104px);aspect-ratio:1;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 12px 34px rgba(0,0,0,.32);z-index:3;overflow:hidden}
+.hero-logo img{width:84%;height:84%;object-fit:contain;mix-blend-mode:multiply}
+.hl{background:linear-gradient(180deg,transparent 58%,var(--lime) 58%);padding:0 .08em}
 
 .ticker{background:var(--lime);color:#15170F;border-bottom:1px solid #B9D455}
 .ticker .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding-block:0}
@@ -168,13 +176,15 @@ section{padding-block:clamp(3rem,6.5vw,5.2rem)}
 .check li{counter-increment:c;display:grid;grid-template-columns:2.1rem 1fr;gap:.6rem;padding:.62rem 0;border-top:1px solid rgba(255,255,255,.1);font-size:.92rem;line-height:1.45}
 .check li::before{content:counter(c,decimal-leading-zero);font-family:var(--mono);font-size:.66rem;color:var(--lime);padding-top:.2rem}
 
-.cards{display:grid;grid-template-columns:1.08fr 1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.leader{display:grid;grid-template-columns:minmax(170px,250px) 1fr;gap:clamp(1.4rem,4vw,3rem);align-items:center;margin-top:clamp(2.2rem,5vw,3.4rem);padding-top:clamp(1.6rem,3vw,2.2rem);border-top:1px solid var(--rule)}
+.leader-photo{overflow:hidden;background:#E9EAE3}
+.leader-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;filter:saturate(.92)}
+.leader-copy h3{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-.02em;margin:.55rem 0 .4rem}
+.leader-role{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--olive);margin:0 0 .9rem}
+.leader-copy p{font-size:.97rem;color:#3B4036;max-width:42rem}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
 .card{background:#fff;padding:clamp(1.3rem,2.2vw,1.85rem);display:flex;flex-direction:column;gap:.9rem;transition:background .2s}
-.card:first-child{grid-row:span 2;justify-content:flex-start}
-.card:first-child .cicon{width:112px;height:112px}
-.card:first-child .cicon svg{width:58px;height:58px}
-.card:first-child h3{font-size:clamp(1.4rem,2.3vw,1.85rem);letter-spacing:-.025em;line-height:1.05;margin-top:.3rem}
-.card:first-child p{font-size:1rem;max-width:30rem}
 .card:hover{background:#FCFDF7}
 .card .top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
 .card .idx{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:#8A8F80;padding-top:.2rem}
@@ -277,16 +287,14 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
   .burger{display:block}
   .nav .btn{display:none}
   .cards{grid-template-columns:repeat(2,1fr)}
-  .card:first-child{grid-row:auto;grid-column:span 2}
-  .card:first-child .cicon{width:92px;height:92px}
-  .card:first-child .cicon svg{width:48px;height:48px}
   .grades{grid-template-columns:repeat(3,1fr)}
   .shead{flex-direction:column;align-items:flex-start;gap:.5rem}
   .topline .wrap{font-size:.6rem}
 }
 @media (max-width:640px){
   .cards{grid-template-columns:1fr}
-  .card:first-child{grid-column:span 1}
+  .leader{grid-template-columns:1fr}
+  .leader-photo img{aspect-ratio:4/3;object-position:50% 16%}
   .card .cicon{width:72px;height:72px}
   .card .cicon svg{width:38px;height:38px}
 }
@@ -337,6 +345,7 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
     </div>
     <div class="hero-media">
       <img src="assets/hero-v2.jpg" alt="Security officer in a dark olive uniform, SECURITY printed across the back, at a warehouse gate at dusk" fetchpriority="high">
+      <span class="hero-logo"><img src="assets/logo-trim.jpg" alt="Kathorus Security badge"></span>
     </div>
   </section>
 
@@ -373,6 +382,17 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
           </ul>
         </div>
       </div>
+      <div class="leader reveal">
+        <div class="leader-photo">
+          <img src="assets/director-jacob-molai.jpg" alt="Jacob Molai, Main Director of Kathorus Security" loading="lazy">
+        </div>
+        <div class="leader-copy">
+          <span class="lbl">Leadership</span>
+          <h3>Jacob Molai</h3>
+          <p class="leader-role">Main Director · Security Management &amp; HR Specialist</p>
+          <p>Jacob Molai is Main Director of Kathorus Security, responsible for security management and human resources across the group's guarding, investigation and training operations.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -391,8 +411,8 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
         </article>
         <article class="card reveal">
           <div class="top"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="M15.4 15.4L20.5 20.5"/><path d="M7.9 10.8s1.2-2 2.9-2 2.9 2 2.9 2-1.2 2-2.9 2-2.9-2-2.9-2z"/><circle cx="10.8" cy="10.8" r=".9"/></svg></span><span class="idx">02</span></div>
-          <h3>Contract undercover agent</h3>
-          <p>Our specialist discipline: an agent working inside your operation to surface theft, collusion and losses you cannot see from the gate.</p>
+          <h3>Undercover agent <span class="hl">training</span></h3>
+          <p>Our specialist discipline: we train agents in-house and place them inside your operation to surface theft, collusion and losses you cannot see from the gate.</p>
           <span class="tag">Specialist</span>
         </article>
         <article class="card reveal">
@@ -412,6 +432,12 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
           <h3>Security recruitment agency</h3>
           <p>We recruit and screen security personnel for clients who need the right person, not just a warm body.</p>
           <span class="tag">Placement</span>
+        </article>
+        <article class="card reveal">
+          <div class="top"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.6 8.9l12.2-3.4 1.7 5.9-12.2 3.4z"/><path d="M5.1 14.8v3.4"/><path d="M2.9 18.2h4.6"/><path d="M15.9 6.2l3.2 1.8-1.4 2.9"/><circle cx="9.4" cy="10" r=".9" fill="currentColor" stroke="none"/></svg></span><span class="idx">06</span></div>
+          <h3>CCTV <span class="hl">training</span></h3>
+          <p>Operator training on CCTV systems — camera control, live monitoring, incident logging and control-room procedure, taught at our PSIRA-registered centre.</p>
+          <span class="tag">Academy</span>
         </article>
       </div>
       <div class="duties reveal">
@@ -503,19 +529,6 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
         <article class="branch reveal">
           <span class="idx">02</span>
           <div class="b-main">
-            <h3>Katlehong Resource Centre</h3>
-            <address>Katlehong Resource Centre, next to Ramponopi Clinic, Katlehong</address>
-            <span class="land">Training &amp; enrolments</span>
-          </div>
-          <div class="tel">
-            <a href="tel:+27634157715">063 415 7715</a>
-            <a href="tel:+27684354047">068 435 4047</a>
-          </div>
-          <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Katlehong+Resource+Centre+Ramponopi+Clinic+Katlehong" target="_blank" rel="noopener">Directions</a>
-        </article>
-        <article class="branch reveal">
-          <span class="idx">03</span>
-          <div class="b-main">
             <h3>Thokoza branch</h3>
             <address>437 Kumalo Street, Thokoza — next to Chicken Licken</address>
             <span class="land">Guarding &amp; training</span>
@@ -525,6 +538,19 @@ footer{background:#0A0C09;color:#7E8477;font-size:.78rem;padding-block:1.9rem}
             <a href="tel:+27670893145">067 089 3145</a>
           </div>
           <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=437+Kumalo+Street+Thokoza" target="_blank" rel="noopener">Directions</a>
+        </article>
+        <article class="branch reveal">
+          <span class="idx">03</span>
+          <div class="b-main">
+            <h3>Katlehong Resource Centre</h3>
+            <address>Katlehong Resource Centre, next to Ramponopi Clinic, Katlehong</address>
+            <span class="land">Training &amp; enrolments</span>
+          </div>
+          <div class="tel">
+            <a href="tel:+27634157715">063 415 7715</a>
+            <a href="tel:+27684354047">068 435 4047</a>
+          </div>
+          <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Katlehong+Resource+Centre+Ramponopi+Clinic+Katlehong" target="_blank" rel="noopener">Directions</a>
         </article>
       </div>
     </div>
